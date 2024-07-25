@@ -61,8 +61,15 @@ def send_direction_to_drone(direction):
 
 if __name__ == "__main__":
     chosen_detection, chosen_control = userinterface.get_user_choices()
+    
+    print(f"Chosen Detection: {chosen_detection}")
+    print(f"Chosen Control: {chosen_control}")
+    
+    
     if chosen_control == "tello":
         drone_controller = TelloDroneController()
+    if chosen_control == "print":
+        drone_controller = PrintDroneController()
     else:
         print("Invalid control method.")
 
@@ -70,7 +77,7 @@ if __name__ == "__main__":
         run_keyboard_control(direction_from_keyboard)
     elif chosen_detection == "osc":
         run_osc_detection(direction_from_osc)
-    elif chosen_detection == "gestures":
+    elif chosen_detection == "gesture":
         run_gesture_detection(direction_from_gestures)
     else:
         print("Invalid detection method.")

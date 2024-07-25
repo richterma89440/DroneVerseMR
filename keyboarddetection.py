@@ -47,6 +47,7 @@ def run_keyboard_control(direction_callback):
                 elif event.key == pygame.K_q:
                     pygame.quit()
                     sys.exit()
+                    
             if event.type == pygame.KEYUP:
                 if event.key == pygame.K_w:
                     keys_pressed["forward"] = False
