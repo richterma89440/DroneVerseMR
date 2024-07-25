@@ -9,6 +9,7 @@ import sys
 import pygame
 import sys
 
+
 keys_pressed = {
     "up": False,
     "down": False,
@@ -49,16 +50,22 @@ def run_keyboard_control(direction_callback):
             if event.type == pygame.KEYUP:
                 if event.key == pygame.K_w:
                     keys_pressed["forward"] = False
+                    direction_callback("stop")
                 elif event.key == pygame.K_s:
                     keys_pressed["backward"] = False
+                    direction_callback("stop")
                 elif event.key == pygame.K_a:
                     keys_pressed["left"] = False
+                    direction_callback("stop")
                 elif event.key == pygame.K_d:
                     keys_pressed["right"] = False
+                    direction_callback("stop")
                 elif event.key == pygame.K_UP:
                     keys_pressed["up"] = False
+                    direction_callback("stop")
                 elif event.key == pygame.K_DOWN:
                     keys_pressed["down"] = False
+                    direction_callback("stop")
 
         try:
             if keys_pressed["up"]:

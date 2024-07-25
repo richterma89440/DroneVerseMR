@@ -71,4 +71,3 @@ class TelloDroneController:
         self.update_movement()
         print("Tello: Stop")
 
- 

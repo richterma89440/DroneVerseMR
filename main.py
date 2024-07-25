@@ -54,6 +54,8 @@ def send_direction_to_drone(direction):
         drone_controller.forward()
     elif direction == "backward":
         drone_controller.backward()
+    elif direction == "stop":
+        drone_controller.stop()
     else:
         print(f"Invalid direction: {direction}")
 
@@ -72,3 +74,4 @@ if __name__ == "__main__":
         run_gesture_detection(direction_from_gestures)
     else:
         print("Invalid detection method.")
+        
