@@ -18,7 +18,7 @@ from PyQt5.QtWidgets import (
 )
 from PyQt5.QtGui import QPixmap, QPalette, QBrush
 from PyQt5.QtCore import Qt
-
+from tello_dronecontrol import TelloDroneController
 
 class UserInterface(QWidget):
     def __init__(self):
@@ -103,7 +103,6 @@ class UserInterface(QWidget):
     def start_clicked(self):
         detection_button = self.detection_group.checkedButton()
         control_button = self.control_group.checkedButton()
-
         if detection_button and control_button:
             self.chosen_detection = detection_button.text().lower()
             self.chosen_control = control_button.text().lower()
