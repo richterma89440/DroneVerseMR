@@ -1,5 +1,6 @@
 # Sina Steinmüller
-# Stand: 2024-06-30
+# Maximilian Richter
+# Stand: 2024-07-26
 """ 
 This program provides a simple print-based drone controller for demonstration purposes.
 
@@ -9,7 +10,7 @@ This program provides a simple print-based drone controller for demonstration pu
 
 class PrintDroneController:
     def __init__(self):
-        # Hier könntest du die Initialisierung der Drohnenverbindung oder andere Vorbereitungen vornehmen
+        
         pass
 
     def up(self):

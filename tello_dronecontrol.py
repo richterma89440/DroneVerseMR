@@ -1,6 +1,6 @@
 # Maximilian Richter
 # Sina Steinmüller
-# Stand: 2024-07-17
+# Stand: 2024-07-26
 """ 
 This program provides a simple Tello drone controller for demonstration purposes.
 Needs to be updated, not tested yet.
@@ -19,7 +19,7 @@ class TelloDroneController:
         self.speed_left_right = 0  # Links/Rechts
         self.speed_up_down = 0     # Auf/Ab
         self.speed_forward_back = 0  # Vorwärts/Rückwärts
-        self.yaw_speed = 0  # Yaw (Drehung)
+        self.yaw_speed = 0  # Drehung (bisher noch nicht implementiert)
         
         self.drone.connect()
         print("Drone connected.")
