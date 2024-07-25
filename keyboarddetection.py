@@ -14,7 +14,9 @@ keys_pressed = {
     "down": False,
     "left": False,
     "right": False,
-    "takeoff": False
+    "takeoff": False,
+    "forward": False,
+    "backward": False,
 }
 
 def run_keyboard_control(direction_callback):
