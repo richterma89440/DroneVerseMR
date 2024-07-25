@@ -1,6 +1,6 @@
 # Maximilian Richter
 # Sina Steinmüller
-# Stand: 2024-07-17
+# Stand: 2024-07-26
 """ 
 This program uses Pygame to detect keyboard input and control the drone based on the user's choice.
 """

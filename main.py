@@ -1,5 +1,6 @@
 # Sina Steinmüller
-# Stand: 2024-06-30
+# Maximilian Richter
+# Stand: 2024-07-26
 """ 
 Main program that starts the chosen detection and control modules based on the user's choice.
 """
