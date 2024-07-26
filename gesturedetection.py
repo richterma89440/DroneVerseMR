@@ -37,6 +37,8 @@ def run_gesture_detection(direction_callback):
             frame, height, width, roi_top, roi_bottom, roi_middle_left, roi_middle_right
         )
 
+        direction = "stop"
+        
         # Überprüfe, ob der Zeigefinger in der oberen, unteren oder mittleren Region liegt
         if results.multi_hand_landmarks:
             for hand_landmarks in results.multi_hand_landmarks:
