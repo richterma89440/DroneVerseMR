@@ -28,7 +28,7 @@ class TelloDroneController:
         
         self.takeoff() # Drohne hebt ab, sobald die Instanz erstellt wird
         
-        self.speed = 30 # Geschwindigkeit der Drohne
+        self.speed = 60 # Geschwindigkeit der Drohne
         
         
     
@@ -80,3 +80,12 @@ class TelloDroneController:
         self.update_movement()
         print("Tello: Stop")
 
+    def yaw_left(self):
+        self.yaw_speed = -self.speed
+        self.update_movement()
+        print("Tello: Yaw Left")
+    
+    def yaw_right(self):
+        self.yaw_speed = self.speed
+        self.update_movement()
+        print("Tello: Yaw Right")
