@@ -1,4 +1,5 @@
 # Sina Steinmüller
+# Maximilian Richter
 # Stand: 2024-07-26
 """ 
 This program gives the user the option to choose between different detection and control methods for a drone.
